@@ -1,0 +1,24 @@
+{
+  "Html": "/TestProjectAdFinix/MainCorporationEntry.html",
+  "Name$": "",
+  "SaveTrigger$": 0,
+  "CorporationNameView": "",
+  "Corporations": [ {} ],
+  "FranchiseName$": "",
+  "AddNewFranchise$": 0,
+  "FranchiseOffices": [
+    {
+      "Link": "",
+      "Name": "",
+      "NumberOfHomesSold": 0,
+      "TotalCommission": 0.0,
+      "AverageCommission": 0.0,
+      "Trend": 0.0
+    }
+  ],
+  "SortHouseCountTrigger$": 0,
+  "SortTotalCommissionTrigger$": 0,
+  "SortAvgCommissionTrigger$": 0,
+  "SortPositiveTrendTrigger$": 0
+
+}

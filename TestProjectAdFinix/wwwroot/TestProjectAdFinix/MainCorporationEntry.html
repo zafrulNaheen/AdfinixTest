@@ -1,0 +1,81 @@
+﻿<link rel="import" href="/sys/polymer/polymer.html">
+
+<template>
+    <template is="dom-bind">
+        <h3>Welcome</h3>
+        <h4>Create Corporation</h4>
+        <fieldset>
+            <label>Name:</label>            
+            <input value="{{ model.Name$::input}}">
+        </fieldset>
+        <button value="{{model.SaveTrigger$::click}}" onmousedown="++this.value"> Save</button>
+        <hr>
+
+        <h3>{{model.CorporationNameView}}</h3>       
+
+        <h6>Sort On</h6>       
+
+        <table border="0" >
+            <tr>
+                <td style="padding:4px">
+                    
+                </td>
+                <td style="padding:4px">
+                    <button value="{{model.SortHouseCountTrigger$::click}}" onmousedown="++this.value"> Number of House Sold </button>
+                </td>
+                <td style="padding:4px">
+                    <button value="{{model.SortTotalCommissionTrigger$::click}}" onmousedown="++this.value"> Total Commission </button>
+                </td>
+                <td style="padding:4px">
+                    <button value="{{model.SortAvgCommissionTrigger$::click}}" onmousedown="++this.value"> Average Commission </button>
+                </td>
+                <td style="padding:4px">
+                    <button value="{{model.SortPositiveTrendTrigger$::click}}" onmousedown="++this.value"> Positive Trend </button>
+                </td>                
+            </tr>
+            <tr>
+                <td style="padding:4px">
+                    Name
+                </td>
+                <td style="padding:4px">
+                    Number of House Sold
+                </td>
+                <td style="padding:4px">
+                    Total Commission
+                </td>
+                <td style="padding:4px">
+                    Average Commission
+                </td>
+                <td style="padding:4px">
+                    Trend
+                </td>
+            </tr>
+            <template is="dom-repeat" items="{{model.FranchiseOffices}}">
+                <tr>
+                    <td>
+                        <a href="{{item.Link}}">{{item.Name}}</a>
+                    </td>           
+                    <td>
+                       {{item.NumberOfHomesSold}}
+                    </td>
+                    <td>
+                        {{item.TotalCommission}}
+                    </td>
+                    <td>
+                        {{item.AverageCommission}}
+                    </td>
+                    <td>
+                        {{item.Trend}}
+                    </td>         
+                </tr>
+            </template>
+        </table>
+
+        <h4>New Franchise Office</h4>
+        <fieldset>
+            <label>Name:</label>
+            <input value="{{ model.FranchiseName$::input}}">
+        </fieldset>
+        <button value="{{model.AddNewFranchise$::click}}" onmousedown="++this.value"> Create New Franchise </button>          
+    </template>
+</template>

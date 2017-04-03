@@ -1,0 +1,5 @@
+C:\Development\StarCounter\TestProjectAdFinix\TestProjectAdFinix\bin\Debug\TestProjectAdFinix.exe
+C:\Development\StarCounter\TestProjectAdFinix\TestProjectAdFinix\bin\Debug\TestProjectAdFinix.pdb
+C:\Development\StarCounter\TestProjectAdFinix\TestProjectAdFinix\obj\x64\Debug\TestProjectAdFinix.exe
+C:\Development\StarCounter\TestProjectAdFinix\TestProjectAdFinix\obj\x64\Debug\TestProjectAdFinix.pdb
+C:\Development\StarCounter\TestProjectAdFinix\TestProjectAdFinix\obj\x64\Debug\TestProjectAdFinix.csprojResolveAssemblyReference.cache

@@ -1,0 +1,139 @@
+﻿<link rel="import" href="/sys/polymer/polymer.html">
+<template>
+    <template is="dom-bind">     
+        <h4>Edit Franchise Settings</h4>
+        <fieldset style="width:350px;padding:4px">
+
+            <label  style="width:150px;padding:4px">Name:</label>
+            <input value="{{ model.FranchiseSettings.Name$::input}}">
+
+        </fieldset>
+        <fieldset style="width:350px;padding:4px">
+
+            <label style="width:150px;padding:4px">Street:</label>
+            <input value="{{ model.FranchiseSettings.Street$::input}}">
+
+        </fieldset> 
+        <fieldset style="width:350px;padding:4px">
+
+            <label style="width:150px;padding:4px">Number:</label>
+            <input value="{{ model.FranchiseSettings.Number$::input}}">
+
+        </fieldset>   
+        <fieldset style="width:350px;padding:4px">
+
+            <label style="width:150px;padding:4px">Zip Code:</label>
+            <input value="{{ model.FranchiseSettings.ZipCode$::input}}">
+
+        </fieldset>
+        <fieldset style="width:350px;padding:4px">
+            
+            <label style="width:150px;padding:4px">City:</label>
+            <input value="{{ model.FranchiseSettings.City$::input}}">
+
+        </fieldset>
+        <fieldset style="width:350px;padding:4px">
+            
+            <label style="width:150px;padding:4px">Country:</label>
+            <input value="{{ model.FranchiseSettings.Country$::input}}">
+
+        </fieldset>   
+        <button value="{{model.AddFranchiseSettings$::click}}" onmousedown="++this.value"> Save Franchise Settings </button>
+    </template>
+
+    <template is="dom-bind">
+        <h4>Register New Home Sale</h4>
+        <fieldset style="width:350px;padding:4px">
+            
+            <label style="width:150px;padding:4px">Name:</label>
+            <input value="{{ model.HomeInformation.Name$::input}}">
+
+        </fieldset>
+        <fieldset style="width:350px;padding:4px">
+            
+            <label style="width:150px;padding:4px">Street:</label>
+            <input value="{{ model.HomeInformation.Street$::input}}">
+
+        </fieldset>
+        <fieldset style="width:350px;padding:4px">
+            
+            <label style="width:150px;padding:4px">Number:</label>
+            <input value="{{ model.HomeInformation.Number$::input}}">
+
+        </fieldset>
+        <fieldset style="width:350px;padding:4px">
+            
+            <label style="width:150px;padding:4px">Zip Code:</label>
+            <input value="{{ model.HomeInformation.ZipCode$::input}}">
+
+        </fieldset>
+        <fieldset style="width:350px;padding:4px">
+            
+            <label style="width:150px;padding:4px">City:</label>
+            <input value="{{ model.HomeInformation.City$::input}}">
+
+        </fieldset>
+        <fieldset style="width:350px;padding:4px">
+            
+            <label style="width:150px;padding:4px">Country:</label>
+            <input value="{{ model.HomeInformation.Country$::input}}">
+
+        </fieldset>
+        <h6>Transaction Sale</h6>
+
+        <fieldset style="width:350px;padding:4px">
+            
+            <label style="width:150px;padding:4px">Date:</label>
+            <input value="{{ model.TransactionInfo.Date$::input}}">
+
+        </fieldset>
+        <fieldset style="width:350px;padding:4px">
+            
+            <label style="width:150px;padding:4px">Price:</label>
+            <input value="{{ model.TransactionInfo.SalesPrice$::input}}">
+
+        </fieldset>
+        <fieldset style="width:350px;padding:4px">
+            
+            <label style="width:150px;padding:4px">Commision:</label>
+            <input value="{{ model.TransactionInfo.Commission$::input}}">
+
+        </fieldset>
+
+        <button value="{{model.AddHomeSaleInformation$::click}}" onmousedown="++this.value"> Save Franchise Settings </button>
+    </template>
+    <template is="dom-bind">
+        <table border="0">
+            <tr>
+                <td style="width:350px;padding:4px">
+                    Date
+                </td>
+                <td style="width:350px;padding:4px">
+                    Sales Price
+                </td>
+                <td style="width:350px;padding:4px">
+                    Commission
+                </td>
+                <td style="width:350px;padding:4px">
+                    Address
+                </td>
+            </tr>
+            <template is="dom-repeat" items="{{model.SoldHomeList}}">
+                <tr>
+                    <td>
+                        {{item.Date}}
+                    </td>
+                    <td>
+                        {{item.Price}}
+                    </td>
+                    <td>
+                        {{item.Commission}}
+                    </td>
+                    <td>
+                        {{item.Address}}
+                    </td>                   
+                </tr>
+            </template>
+        </table>
+    </template>
+</template>

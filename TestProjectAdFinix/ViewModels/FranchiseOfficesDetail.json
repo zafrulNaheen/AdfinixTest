@@ -1,0 +1,38 @@
+{
+  "Html": "/TestProjectAdFinix/FranchiseOfficesDetail.html",
+  "FranchiseSettings": {
+    "Name$": "",
+    "Street$": "",
+    "Number$": "",
+    "ZipCode$": "",
+    "City$": "",
+    "Address$": "",
+    "Country$": ""
+  },
+  "AddFranchiseSettings$": 0,
+  "HomeInformation": {
+    "Name$": "",
+    "Street$": "",
+    "Number$": "",
+    "ZipCode$": "",
+    "City$": "",
+    "Address$": "",
+    "Country$": ""
+  },
+  "AddHomeInformation$": 0,
+  "TransactionInfo": {
+    "Date$": "",
+    "SalesPrice$": 0.0,
+    "Commission$": 0.0
+  },
+  "AddHomeSaleInformation$": 0,
+  "SoldHomeList": [
+    {
+      "Date": "",
+      "Price": 0.0,
+      "Commission": 0.0,
+      "Address": ""
+    }
+  ]
+ 
+}

@@ -5,6 +5,9 @@ namespace TestProjectAdFinix
 {
     class Program
     {
+        /// <summary>
+        ///  new code
+        /// </summary>
         static void Main()
         {
             Application.Current.Use(new HtmlFromJsonProvider());

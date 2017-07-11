@@ -32,7 +32,7 @@ namespace TestProjectAdFinix
             Handle.GET("/TestProjectAdFinix/franchisedetails/{?}", (string id) =>
             {
                 Console.WriteLine(id);
-                var json =  (FranchiseOfficesDetail) Self.GET("/TestProjectAdFinix/partial/franchisedetails");
+                var json = (FranchiseOfficesDetail)Self.GET("/TestProjectAdFinix/partial/franchisedetails");
                 json.Data = DbHelper.FromID(DbHelper.Base64DecodeObjectID(id)) as FranchiseOffice;
                 json.RefreshData();
 

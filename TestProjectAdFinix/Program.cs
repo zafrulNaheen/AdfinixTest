@@ -12,7 +12,8 @@ namespace TestProjectAdFinix
         {
             Application.Current.Use(new HtmlFromJsonProvider());
             Application.Current.Use(new PartialToStandaloneHtmlProvider());
-
+            ///
+            /// new comment
             Handle.GET("/TestProjectAdFinix", () =>
             {
                 return Db.Scope(() =>
